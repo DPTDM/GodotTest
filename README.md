@@ -18,4 +18,3 @@ Mahiwaga is a 2D, top-down fighting game in which players, known as Mythic Hunte
 
 * This game is a work-in-progress and is only a prototype. Final game may not look like the prototype due to major design changes.
 * Arts and designs of the game is still being made.
-
