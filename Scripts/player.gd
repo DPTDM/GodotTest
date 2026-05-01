@@ -1,6 +1,9 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+# Movement speeds
+const WALK_SPEED := 150.0      # slower default speed
+const RUN_SPEED := 300.0       # sprint speed
+var speed := WALK_SPEED        # current speed
 
 @onready var wpnPivot: Marker2D = $WeaponPivot
 @onready var wpnSlot: Marker2D = $WeaponPivot/WeaponSlot
@@ -8,7 +11,6 @@ const SPEED = 300.0
 @onready var sword_hitbox: Area2D = $WeaponPivot/WeaponSlot/SwordHitbox
 
 var projectile_scene: PackedScene
-
 var sword_swinging := false
 var swing_angle := 0.0
 var swing_dir := 1.0
@@ -36,8 +38,14 @@ func _ready() -> void:
 	sword_hitbox.get_node("CollisionShape2D").disabled = true
 
 func _physics_process(delta: float) -> void:
+	# Sprint toggle: hold Shift to run
+	if Input.is_action_pressed("sprint"):
+		speed = RUN_SPEED
+	else:
+		speed = WALK_SPEED
+
 	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	velocity = direction * SPEED if direction else velocity.move_toward(Vector2.ZERO, SPEED)
+	velocity = direction * speed if direction else velocity.move_toward(Vector2.ZERO, speed)
 	move_and_slide()
 	look_at_mouse()
 
