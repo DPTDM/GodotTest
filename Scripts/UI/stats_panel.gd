@@ -38,7 +38,7 @@ func _on_stat_up(stat_name: String):
 	if alloc_points <= 0:
 		print("No points left!")
 		return
-
+#dd
 	match stat_name:
 		"hp":
 			hp += 10
