@@ -14,6 +14,7 @@ func _ready() -> void:
 
 func _on_philippines_selected() -> void:
 	GameState.selected_world = 0
+	MenuMusic.play_lobby()
 	SceneTransition.fade_to("res://scenes/world/guild_hall.tscn", PHILIPPINES_FADE_DURATION)
 
 func _on_practice_selected() -> void:
@@ -27,6 +28,7 @@ func _on_weapon_chosen(weapon_name: String) -> void:
 	if _weapon_popup:
 		_weapon_popup.queue_free()
 		_weapon_popup = null
+	MenuMusic.stop()
 	SceneTransition.fade_to("res://scenes/world/PracticeWorld.tscn")
 
 func _on_back_pressed() -> void:

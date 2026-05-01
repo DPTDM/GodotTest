@@ -27,6 +27,7 @@ GameState="*res://scripts/global/GameState.gd"
 Global="*res://scripts/global/global.gd"
 WindowManager="*res://scripts/global/WindowManager.gd"
 GlobalStatPage="*uid://bgjsjrajpb4lf"
+MenuMusic="*res://scripts/global/MenuMusic.gd"
 
 [display]
 
