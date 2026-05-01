@@ -14,18 +14,18 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Mahiwaga"
+config/name="Mahiwaga-latest-update"
 config/description="Top-down action game with main menu system."
-run/main_scene="res://scenes/MainMenu.tscn"
+run/main_scene="res://scenes/menus/MainMenu.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-SceneTransition="*res://scripts/SceneTransition.gd"
-GameState="*res://scripts/GameState.gd"
-Global="*res://Scripts/global.gd"
-WindowManager="*res://Scripts/WindowManager.gd"
+SceneTransition="*res://scripts/global/SceneTransition.gd"
+GameState="*res://scripts/global/GameState.gd"
+Global="*res://scripts/global/global.gd"
+WindowManager="*res://scripts/global/WindowManager.gd"
 GlobalStatPage="*uid://bgjsjrajpb4lf"
 
 [display]
