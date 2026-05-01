@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dpx1afmcrtxgi"]
 
-[ext_resource type="Script" uid="uid://yjaqfbyr5txw" path="res://Scripts/UI/stats_panel.gd" id="1_s1554"]
+[ext_resource type="Script" uid="uid://yjaqfbyr5txw" path="res://scripts/ui/stats_panel.gd" id="1_s1554"]
 
 [node name="StatPage" type="Control" unique_id=1601477638]
 layout_mode = 3

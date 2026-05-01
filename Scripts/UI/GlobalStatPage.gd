@@ -1,6 +1,6 @@
 extends Node
 
-var stat_page_scene = preload("res://scenes/UI/stat_page.tscn")
+var stat_page_scene = preload("res://scenes/ui/stat_page.tscn")
 var stat_page_instance
 var canvas_layer: CanvasLayer
 
