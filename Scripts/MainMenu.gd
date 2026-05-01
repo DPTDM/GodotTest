@@ -9,7 +9,7 @@ func _ready() -> void:
 	$CenterContainer/VBoxContainer/SettingsButton.pressed.connect(_on_settings_pressed)
 	$CenterContainer/VBoxContainer/QuitButton.pressed.connect(_on_quit_pressed)
 
-
+#micko is gay
 func _on_play_pressed() -> void:
 	SceneTransition.fade_to("res://scenes/PlayMenu.tscn")
 
